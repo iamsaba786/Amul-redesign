@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+/* 🌟 Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🧈 Drip Effect (Butter melting) */
+@keyframes drip {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(12px) scale(1.05);
+    opacity: 0.95;
+  }
+}
+.animate-drip {
+  animation: drip 3.5s ease-in-out infinite;
+}
+
+/* ☁️ Float Effect (small butter pieces floating) */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ✨ Glow Pulse Background (soft radial light) */
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+.glow-bg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 207, 50, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  animation: glowPulse 4s ease-in-out infinite;
+  filter: blur(50px);
+}
+
+/* 💫 Shine Effect (light reflection moving across) */
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.4;
+  }
+}
+.animate-shine {
+  animation: shine 6s ease-in-out infinite;
+}
+
+/* 🌼 Soft Glow for Background Lights */
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+    filter: blur(40px);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15);
+    filter: blur(60px);
+  }
+}
+.animate-glow {
+  animation: glow 3.5s ease-in-out infinite;
+}
+.animate-glow-delayed {
+  animation: glow 3.5s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes shineMove {
+  0% {
+    transform: translateX(-100%) rotate(20deg);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(150%) rotate(20deg);
+    opacity: 0.2;
+  }
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    75deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+  animation: shineMove 4s ease-in-out infinite;
+}
+
+/* 🥛 Falling Milk Drop Animation */
+@keyframes milkDropFall {
+  0% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(110vh) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.milk-drop {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ffffff 60%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: milkDropFall linear infinite;
+  opacity: 0.8;
+}
+
+/* ================= MILK DROPS ================== */
+.milk-drop {
+  position: absolute;
+  top: -30px;
+  width: 14px;
+  height: 20px;
+  background: radial-gradient(white 70%, rgba(255, 255, 255, 0.8));
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
+  animation: milkDropFall linear infinite;
+  filter: blur(0.5px);
+  opacity: 0.9;
+  z-index: 20; /* 👈 brings it above background layers */
+}
+
+/* Drop animation */
+@keyframes milkDropFall {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(90vh) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.95);
+    opacity: 0;
+  }
+}
+
+/* Optional: soft splash when drop reaches bottom */
+@keyframes splash {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.splash {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(white 40%, rgba(255, 255, 255, 0));
+  animation: splash 1.2s ease-out;
+  pointer-events: none;
+}
