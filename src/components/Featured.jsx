@@ -79,7 +79,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(0)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex text-[#CDEA68] overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+            <h1 className="absolute flex text-[#EDD98E] overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
               {"Almond".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -104,7 +104,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(1)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#EDD98E] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
               {"SHAKES".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -143,7 +143,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(0)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#EDD98E] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
               {"SANDWICH".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -168,7 +168,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(1)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#EDD98E] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
               {"Neapolitan".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -207,8 +207,8 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(0)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
-              {"PremiumBlend".split("").map((item, index) => (
+            <h1 className="absolute flex overflow-hidden text-[#EDD98E] left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+              {"Premium".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
                   animate={cards[0]}
@@ -232,7 +232,7 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(1)}
             className="cardcontainer relative w-1/2 h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
+            <h1 className="absolute flex overflow-hidden text-[#EDD98E] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter font-['FoundersGrotesk, Roboto, sans-serif'] font-bold text-8xl">
               {"Softstart".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}

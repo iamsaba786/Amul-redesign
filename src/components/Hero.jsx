@@ -18,6 +18,12 @@ export default function Hero() {
     <section className="relative h-screen flex flex-col items-center justify-center bg-gradient-to-b from-yellow-100 to-yellow-50 overflow-hidden">
       <div className="glow-bg"></div>
 
+      <img
+        className="absolute top-0 left-7 z-5 w-35 h-35 inset-0 overflow-hidden pointer-events-none"
+        src="https://imgs.search.brave.com/xfQlyASw5j258Xx_NNR97FWWysPPHZcepvkSnLtMLv4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYWxs/ZXJ5cG5nLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8w/NS9hbXVsLWxvZ28t/aW1hZ2UtZnJlZS1k/b3dubG9hZC03Mjl4/NzUwLnBuZw"
+        alt="logo.png"
+      />
+
       {/* Subtle golden glare effects */}
       <div className="absolute top-20 left-1/3 w-40 h-40 bg-yellow-200/40 blur-3xl rounded-full animate-glow"></div>
       <div className="absolute bottom-20 right-1/4 w-32 h-32 bg-yellow-100/30 blur-2xl rounded-full animate-glow-delayed"></div>
@@ -28,19 +34,26 @@ export default function Hero() {
         <img
           src="https://imgs.search.brave.com/ZQ6cUVcprs7J63fPB0icucI-oRZBMHFmgzM8225wAvw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYnV0dGVyL3Nt/YWxsL2J1dHRlcl9Q/TkcyNi5wbmc"
           alt="Butter Drop"
-          className="absolute top-10 left-20 w-10 opacity-80 animate-drip"
+          className="absolute top-45 left-30 w-10 opacity-80 animate-drip"
         />
         {/* Drop 2 */}
         <img
           src="https://imgs.search.brave.com/ZQ6cUVcprs7J63fPB0icucI-oRZBMHFmgzM8225wAvw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYnV0dGVyL3Nt/YWxsL2J1dHRlcl9Q/TkcyNi5wbmc"
           alt="Butter Drop"
-          className="absolute top-40 right-32 w-8 opacity-70 animate-float"
+          className="absolute top-40 right-52 w-8 opacity-70 animate-float"
         />
+
         {/* Drop 3 */}
         <img
           src="https://imgs.search.brave.com/ZQ6cUVcprs7J63fPB0icucI-oRZBMHFmgzM8225wAvw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYnV0dGVyL3Nt/YWxsL2J1dHRlcl9Q/TkcyNi5wbmc"
           alt="Butter Drop"
-          className="absolute top-130 left-1/2 w-12 opacity-80 animate-float"
+          className="absolute top-75 left-105 w-10 opacity-50 animate-drip"
+        />
+        {/* Drop 4 */}
+        <img
+          src="https://imgs.search.brave.com/ZQ6cUVcprs7J63fPB0icucI-oRZBMHFmgzM8225wAvw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYnV0dGVyL3Nt/YWxsL2J1dHRlcl9Q/TkcyNi5wbmc"
+          alt="Butter Drop"
+          className="absolute top-10 right-105 w-10 opacity-80 animate-drip"
         />
       </div>
 
@@ -60,6 +73,16 @@ export default function Hero() {
         animate={{ y: [0, 15, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         className="absolute top-20 right-20"
+      >
+        <GiCheeseWedge className="text-yellow-400 text-5xl animate-float" />
+      </motion.div>
+
+      {/* Floating dripping cheese icon 2 */}
+      <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: [0, 15, 0] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        className="absolute top-8 left-65"
       >
         <GiCheeseWedge className="text-yellow-400 text-5xl animate-float" />
       </motion.div>
