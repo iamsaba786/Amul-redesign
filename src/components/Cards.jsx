@@ -1,0 +1,44 @@
+import React from "react";
+
+function Cards() {
+  return (
+    <div className="w-full bg-[#FEFCE7] h-screen flex items-center px-20 gap-5">
+      <div className="cardcontainer w-1/2 h-[60vh]">
+        <div className="card relative rounded-xl w-full h-full bg-[#CC8F62] flex items-center justify-center">
+          <img
+            className="w-32"
+            src="https://imgs.search.brave.com/kJSy9T7gL3rGjQ9s6VTbkCty8ZhE3WwpYe_8wdcR-r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY29u/bG9nb3ZlY3Rvci5j/b20vdXBsb2Fkcy9p/bWFnZXMvMjAyNS8w/NC9sZy02N2VmODk3/NGQ1OWY0LUFtdWwu/d2VicA"
+            alt="amul logo"
+          />
+          <button className="absolute px-3 py-0.5 border-2 border-red-600 text-red-600 rounded-full left-8 bottom-8">
+            ©1946-2025
+          </button>
+        </div>
+      </div>
+      <div className="cardcontainer flex gap-5 w-1/2 h-[60vh]">
+        <div className="card relative flex items-center justify-center rounded-xl w-1/2 h-full bg-[#3D1B0E] ">
+          <img
+            className="w-32"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
+            alt=""
+          />
+          <button className="absolute px-3 py-1 border-2 text-white uppercase rounded-full left-8 bottom-8 text-sm">
+            Rating 5.0 on Clutch
+          </button>
+        </div>
+        <div className="card relative flex items-center justify-center rounded-xl w-1/2 h-full bg-black ">
+          <img
+            className="w-32"
+            src="https://imgs.search.brave.com/cL7VjHdxQ7_IhSmwlvSHD5qH5gP7z4lVUoDycN1QX_g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDE5Lzc2/Ni8yMDIvbm9uXzJ4/L2FtdWwtbG9nby1h/bXVsLWljb24tdHJh/bnNwYXJlbnQtbG9n/by1mcmVlLXBuZy5w/bmc"
+            alt=""
+          />
+          <button className="absolute px-9 py-1 border-2 text-white uppercase rounded-full left-10 bottom-6 text-sm">
+            Pehla Pyaar <br /> Amul Pyaar
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Cards;
