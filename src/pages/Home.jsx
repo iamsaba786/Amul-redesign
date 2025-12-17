@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
 import { motion } from "framer-motion";
+import Hero from "../components/Hero";
 import Marque from "../components/Marque";
 import Featured from "../components/Featured";
 import Cards from "../components/Cards";
@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Marque />
       {/* Milk Splash Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#FEFCE7] overflow-hidden">
         <motion.img
@@ -44,6 +43,7 @@ export default function Home() {
           every Indian household with tradition and trust.
         </motion.p>
       </section>
+      <Marque />
       <Featured />
       <Cards />
       {/* Stats Section */}

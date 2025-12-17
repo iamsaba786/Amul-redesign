@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://iamsaba786.github.io/amul-redesign/",
+  "homepage": "https://iamsaba786.github.io/Amul-redesign/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
