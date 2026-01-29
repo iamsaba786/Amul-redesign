@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       {/* Milk Splash Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#FEFCE7] overflow-hidden">
+      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#FEFCE7] overflow-hidden px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <motion.img
           src="https://imgs.search.brave.com/lC2aZqM-EMZTDMh2YMCM6Y-4YfUDOWf5TIxSffx_lGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9NaWxr/LVNwbGFzaC1QTkcu/cG5n"
           alt="Milk Splash"
@@ -19,7 +19,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="w-80 md:w-96 drop-shadow-2xl"
+          className="w-48 sm:w-64 md:w-72 lg:w-80 xl:w-96 drop-shadow-2xl mx-auto"
         />
 
         <motion.h2
@@ -27,7 +27,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-bold text-yellow-700 mt-8"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-700 mt-6 sm:mt-8 text-center leading-tight"
         >
           Pure. Fresh. Desi.
         </motion.h2>
@@ -37,7 +37,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
           viewport={{ once: true }}
-          className="text-center text-gray-600 max-w-xl mt-4"
+          className="text-center text-gray-600 text-sm sm:text-base md:text-lg max-w-md sm:max-w-lg md:max-w-xl mt-4 px-2 leading-relaxed"
         >
           Amul milk — the taste of purity, a splash of freshness that connects
           every Indian household with tradition and trust.
@@ -47,23 +47,35 @@ export default function Home() {
       <Featured />
       <Cards />
       {/* Stats Section */}
-      <section className="w-full py-16 bg-yellow-100 flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-          <div>
-            <h3 className="text-4xl font-bold text-yellow-700">75+</h3>
-            <p className="mt-2 text-gray-700">Years of Purity</p>
+      <section className="w-full py-10 sm:py-12 md:py-16 lg:py-20 bg-yellow-100 flex justify-center items-center px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 w-full max-w-4xl">
+          <div className="text-center py-6">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-700">
+              75+
+            </h3>
+            <p className="mt-2 sm:mt-3 text-gray-700 text-sm sm:text-base font-medium">
+              Years of Purity
+            </p>
           </div>
-          <div>
-            <h3 className="text-4xl font-bold text-yellow-700">10M+</h3>
-            <p className="mt-2 text-gray-700">Happy Families</p>
+          <div className="text-center py-6">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-700">
+              10M+
+            </h3>
+            <p className="mt-2 sm:mt-3 text-gray-700 text-sm sm:text-base font-medium">
+              Happy Families
+            </p>
           </div>
-          <div>
-            <h3 className="text-4xl font-bold text-yellow-700">100+</h3>
-            <p className="mt-2 text-gray-700">Unique Products</p>
+          <div className="text-center py-6">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-700">
+              100+
+            </h3>
+            <p className="mt-2 sm:mt-3 text-gray-700 text-sm sm:text-base font-medium">
+              Unique Products
+            </p>
           </div>
         </div>
       </section>
-      <Footer />;
+      <Footer />
     </>
   );
 }
