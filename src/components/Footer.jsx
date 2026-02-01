@@ -60,34 +60,34 @@ export default function Footer() {
           </h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/products#butter" className="hover:text-yellow-400">
+              <Link to="/products#butter" className="hover:text-yellow-400">
                 Butter
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/products#cheese" className="hover:text-yellow-400">
+              <Link to="/products#cheese" className="hover:text-yellow-400">
                 Cheese
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/products#milk" className="hover:text-yellow-400">
+              <Link to="/products#milk" className="hover:text-yellow-400">
                 Milk
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/products#chocolate" className="hover:text-yellow-400">
+              <Link to="/products#chocolate" className="hover:text-yellow-400">
                 Chocolate
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/products#icecream" className="hover:text-yellow-400">
+              <Link to="/products#icecream" className="hover:text-yellow-400">
                 Ice Cream
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/products#shakes" className="hover:text-yellow-400">
+              <Link to="/products#shakes" className="hover:text-yellow-400">
                 Shakes
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -98,21 +98,31 @@ export default function Footer() {
             Quick Links
           </h2>
           <ul className="space-y-2 text-sm">
-            <Links to="/home" className="hover:text-yellow-400">
-              Home
-            </Links>
-            <Links to="/products" className="hover:text-yellow-400">
-              Products
-            </Links>
-            <Links to="/recipes" className="hover:text-yellow-400">
-              Recipes
-            </Links>
-            <Links to="/about" className="hover:text-yellow-400">
-              About
-            </Links>
-            <Links to="/contact" className="hover:text-yellow-400">
-              Contact
-            </Links>
+            <li>
+              <Link to="/" className="hover:text-yellow-400">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" className="hover:text-yellow-400">
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link to="/recipes" className="hover:text-yellow-400">
+                Recipes
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-yellow-400">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-yellow-400">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
