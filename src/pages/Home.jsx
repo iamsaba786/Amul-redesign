@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       {/* Milk Splash Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#FEFCE7] overflow-hidden px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <section className="relative h-[70vh] sm:h-[75vh] md:h-[80vh] lg:min-h-screen lg:-mt-20 md:-mt-30 sm:-mt-40 flex flex-col items-center justify-center bg-[#FEFCE7] overflow-hidden px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         <motion.img
           src="https://imgs.search.brave.com/lC2aZqM-EMZTDMh2YMCM6Y-4YfUDOWf5TIxSffx_lGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9NaWxr/LVNwbGFzaC1QTkcu/cG5n"
           alt="Milk Splash"
@@ -19,7 +19,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="w-48 sm:w-64 md:w-72 lg:w-80 xl:w-96 drop-shadow-2xl mx-auto"
+          className="w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 2xl:w-80 2xl:w-96 drop-shadow-2xl mx-auto max-h-[50vh] object-contain "
         />
 
         <motion.h2
