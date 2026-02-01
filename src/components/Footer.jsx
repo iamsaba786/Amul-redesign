@@ -98,7 +98,7 @@ export default function Footer() {
             Quick Links
           </h2>
           <ul className="space-y-2 text-sm">
-            <Links to="/" className="hover:text-yellow-400">
+            <Links to="/home" className="hover:text-yellow-400">
               Home
             </Links>
             <Links to="/products" className="hover:text-yellow-400">
