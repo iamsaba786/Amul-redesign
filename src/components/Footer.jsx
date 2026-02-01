@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link, Links } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -97,31 +98,21 @@ export default function Footer() {
             Quick Links
           </h2>
           <ul className="space-y-2 text-sm">
-            <li>
-              <a href="/" className="hover:text-yellow-400">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/products" className="hover:text-yellow-400">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="/recipes" className="hover:text-yellow-400">
-                Recipes
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-yellow-400">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-yellow-400">
-                Contact
-              </a>
-            </li>
+            <Links to="/" className="hover:text-yellow-400">
+              Home
+            </Links>
+            <Links to="/products" className="hover:text-yellow-400">
+              Products
+            </Links>
+            <Links to="/recipes" className="hover:text-yellow-400">
+              Recipes
+            </Links>
+            <Links to="/about" className="hover:text-yellow-400">
+              About
+            </Links>
+            <Links to="/contact" className="hover:text-yellow-400">
+              Contact
+            </Links>
           </ul>
         </div>
 
